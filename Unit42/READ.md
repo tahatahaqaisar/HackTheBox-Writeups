@@ -34,7 +34,7 @@ So here's the setup — we're handed a Sysmon operational log file and told to f
 ### Task 1 — How many Event logs are there with Event ID 11?
 
 
-![Task 1](Task1.png)
+![Task 1](Screenshots/Task1.png)
 
 
 **What's going on here:**  
@@ -46,7 +46,7 @@ You can filter out the number of events by applying Event ID 11 filter and the t
 
 
 
-![Task 2](Task2.png)
+![Task 2](Screenshots/Task2.png)
 
 
 **What's going on here:**  
@@ -74,7 +74,7 @@ To look for the time stomping you can check event id 2 by looking at this event 
 ### Task 5 — 
 
 
-![Task 5](Task5.png)
+![Task 5](Screenshots/Task5.png)
 
 **What's going on here:**  
 Just about 2 seconds after execution, the malware quietly dropped a script called `once.cmd` into a deeply buried folder inside `AppData\Roaming`. The folder path is designed to look boring and legitimate — hiding under a fake "Games" directory. `AppData\Roaming` is a go-to spot for malware because it's writable without admin rights and often ignored by users. This `.cmd` file is almost certainly the next stage of the attack — a script waiting to do more damage.
@@ -96,7 +96,7 @@ You can check for the domain name filtering event id 22. To get the domain name 
 
 
 
-![Task 7](Task7.png)
+![Task 7](Screenshots/Task7.png)
 
 
 **What's going on here:**  
@@ -110,7 +110,7 @@ You can check for the domain name filtering event id 22. To get the domain name 
 
 
 
-![Task 8](Task8.png)
+![Task 8](Screenshots/Task8.png)
 
 |
 
